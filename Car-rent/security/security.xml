@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.rule" id="ir_rule_carrent_cars_public">
+        <field name="name">carrent cars: public: published only</field>
+        <field name="model_id" ref="model_carrent_cars"/>
+        <field name="domain_force">[('website_published', '=', True)]</field>
+        <field name="groups" eval="[(4, ref('base.group_public')), (4, ref('base.group_portal'))]"/>
+    </record>
+
+    <record model="ir.rule" id="ir_rule_carrent_bookings_public">
+        <field name="name">carrent cars: public: published only</field>
+        <field name="model_id" ref="model_carrent_bookings"/>
+        <field name="domain_force">[('customer_id.partner_id', '=', user.partner_id.id)]</field>
+        <field name="groups" eval="[(4, ref('base.group_public')), (4, ref('base.group_portal'))]"/>
+    </record>
+</odoo>

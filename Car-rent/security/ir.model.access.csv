@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_carrent_cars,access_carrent_cars,model_carrent_cars,base.group_user,1,1,1,1
+access_carrent_customers,access_carrent_customers,model_carrent_customers,base.group_user,1,1,1,1
+access_carrent_bookings,access_carrent_bookings,model_carrent_bookings,base.group_user,1,1,1,1
+
+

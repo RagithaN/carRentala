@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<record model="ir.ui.view" id="carrent_cars_view_form">
+    <field name="name">carrent_cars_view_form</field>
+   <field name="model">carrent.cars</field>
+    <field name="arch" type="xml">
+      <form string="cars">
+      	<sheet>
+      	
+      	<div class="oe_button_box" name="open_bookings_ofthe_car">
+      	<button name="open_bookings_ofthe_car" string="view bookings" type="object" class="oe_stat_button" icon="fa-calender">
+      	</button>
+      	</div>
+      	
+      	  <h1>
+      	  	<field name="car-id" placeholder="car_number"/>
+      	  </h1>
+      	 
+      	  </sheet>
+      	  </form>
+      	  </field>
+      	  </record>
+
+ </odoo>

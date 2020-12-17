@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record model="ir.actions.act_window" id="action_carrent_cars">
+  	<field name="name">Car_number</field>
+  	<field name="res_model">carrent.cars</field>
+  	<field name="view_mode">tree,form</field>
+  </record>
+  <menuitem name="car Rental" id="carrent_root_menu"/>
+  <menuitem name="cars" id="carrent_cars_menu" parent="carrent_root_menu" action="action_carrent_cars" sequence="1"/>
+  <menuitem name="customers" id="carrent_customers_menu" parent="carrent_root_menu" action="action_carrent_cars" sequence="2"/>
+  <menuitem name="bookings" id="carrent_bookings_menu" parent="carrent_root_menu" action="action_carrent_cars" sequence="3"/>
+       	  
+  
+  </odoo>
+  	
+
